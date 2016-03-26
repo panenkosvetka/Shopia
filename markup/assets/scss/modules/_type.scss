@@ -1,0 +1,53 @@
+
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	color: $text-color;
+	background: $body-bg;
+	font-weight: $font-weight-base;
+}
+a {
+	color: inherit;
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $font-family-base;
+  font-weight: $headings-font-weight;
+  color: $headings-color;
+}
+h1, .h1 { font-size: $font-size-h1;}
+h2, .h2 { font-size: $font-size-h2;}
+h3, .h3 { font-size: $font-size-h3;}
+
+
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+.center-block			{display: block; margin: 0 auto;}
+.text-uppercase		{text-transform: uppercase;}
+.text-italic		{font-style: italic; font-family: $headings-font-family;}
+.text-capitalize {text-transform: capitalize;}
