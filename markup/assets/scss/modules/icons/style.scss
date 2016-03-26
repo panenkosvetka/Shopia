@@ -1,0 +1,98 @@
+@import "variables";
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?jhntp2');
+    src:    url('../fonts/icomoon.eot?jhntp2#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?jhntp2') format('truetype'),
+        url('../fonts/icomoon.woff?jhntp2') format('woff'),
+        url('../fonts/icomoon.svg?jhntp2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rhombus {
+    &:before {
+        content: $icon-rhombus;
+    }
+}
+.icon-support {
+    &:before {
+        content: $icon-support;
+    }
+}
+.icon-angle-up {
+    &:before {
+        content: $icon-angle-up;
+    }
+}
+.icon-angle-down {
+    &:before {
+        content: $icon-angle-down;
+    }
+}
+.icon-plane {
+    &:before {
+        content: $icon-plane;
+    }
+}
+.icon-clock-o {
+    &:before {
+        content: $icon-clock-o;
+    }
+}
+.icon-phone {
+    &:before {
+        content: $icon-phone;
+    }
+}
+.icon-facebook {
+    &:before {
+        content: $icon-facebook;
+    }
+}
+.icon-instagram {
+    &:before {
+        content: $icon-instagram;
+    }
+}
+.icon-twitter {
+    &:before {
+        content: $icon-twitter;
+    }
+}
+.icon-feed2 {
+    &:before {
+        content: $icon-feed2;
+    }
+}
+.icon-pinterest {
+    &:before {
+        content: $icon-pinterest;
+    }
+}
+.md-icons{
+    font-size: $icon-font-size-md;
+}
+.lg-icons{
+    font-size: $icon-font-size-mlg;
+     @media screen and (min-width: 1124px){
+        font-size: $icon-font-size-lg;
+     }
+}
+
