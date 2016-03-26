@@ -1,0 +1,84 @@
+.preheader{
+	background: $preheader-bg;
+	padding: 12px 0;
+	color: $preheader-color;
+	font-size: 11px;
+	&-inner{
+		display: flex;
+		justify-content: space-between;
+		.phone{
+			display: flex;
+			align-items: center;
+			margin-left: 7px;
+			[class*="icon-"]{
+				margin-right: 19px;
+			}
+		}
+	}
+}
+.header{
+	padding: 36px 0 15px 0;
+	.nav{
+		margin-left: 9px;
+	}
+	.logo{
+		margin: -5px 0 0 42px;
+		svg{
+			width: 170px;
+			height: auto;
+			@media screen and (min-width: 768px){
+				width: 232px;
+				height: auto;
+			}
+		}
+	}
+	.hidden-wrap{
+		display: flex;
+		justify-content: flex-end;
+		.list-social{
+			margin: 6px 32px 0 0;
+		}
+	}
+}
+
+.block{
+	padding: 65px 0 31px 0;
+	&-brand{
+		background: $brand-color;
+	}
+	&-list{
+		&-inner{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			overflow: hidden;
+		}
+	}
+	&-quote{
+		padding-bottom: 0;
+		.page-header{
+			padding-bottom: 60px;
+			h2{
+				@media screen and (min-width: 768px){
+					padding: 0 74px;
+				}
+			}
+		}
+	}
+}
+.footer{
+	background: $footer-bg;
+	padding: 30px 0;
+	overflow: hidden;
+	@media screen and (min-width: 768px){
+		padding: 66px 0;
+	}
+	h3{
+		color: $text-color;
+		margin-bottom: 48px;
+		text-align: center;
+		@media screen and (min-width: 960px){
+			text-align: left;
+		}
+	}
+}
