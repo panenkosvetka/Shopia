@@ -1,0 +1,63 @@
+.main-nav{
+	text-align: right;
+	.nav-toggle{
+		position: relative;
+		padding: 9px 10px;
+		background: $brand-color;
+		border-color: transparent;
+		margin-bottom: 10px;
+		&:focus{
+			outline: none;
+		}
+		&:hover{
+			background: lighten($brand-color, 10%);
+		}
+		.icon-bar{
+			display: block;
+			width: 22px;
+			height: 2px;
+			border-radius: 1px;
+			background: $body-bg;
+		}
+		.icon-bar + .icon-bar{
+			margin-top: 4px;
+		}
+	}
+	.nav{
+		display: none;
+	}
+	@media screen and (min-width: 960px){
+		text-align: left;
+		.nav-toggle{
+			display: none;
+		}
+		.nav{
+			display: flex;
+			position: static;
+			
+			li{
+				&:first-child{
+					a{
+						padding-left: 6px;
+					}
+				}
+				&.active{
+					a{
+						color: $brand-color;
+					}
+				}
+				a{
+					color: $text-inverse-color;
+					font-size: $font-size-lg;
+					text-decoration: none;
+					padding: 7px 12px;
+					display: inline-block;
+					font-family: $second-font-family;
+					&:hover{
+						color: $brand-color;
+					}
+				}
+			}
+		}
+	}
+}

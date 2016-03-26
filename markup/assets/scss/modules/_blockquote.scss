@@ -1,0 +1,51 @@
+.quote{
+	display: flex;
+	align-items: center;
+	padding-top: 60px;
+	margin-bottom: 20px;
+	@media screen and (min-width: 768px){
+		padding: 36px 0 29px 0;
+		align-items: stretch;
+	}
+	&-text{
+		padding: 0 0 0 15px;
+		line-height: $line-height-quote;
+		@media screen and (min-width: 768px){
+			padding: 94px 0 0 15px;
+		}
+		blockquote{
+			font-family: $second-font-family;
+			font-size: $font-size-lg;
+			font-style: italic;
+			margin-bottom: 20px;
+			@media screen and (min-width: 768px){
+				margin-bottom: 48px;
+			}
+		}
+		cite{
+			font-family: $second-font-family;
+			font-size: $font-size-h2;
+			font-style: italic;
+			color: $text-inverse-color;
+			font-weight: 700;
+			display: block;
+			margin-bottom: 6px;
+		}
+		p{
+			color: #7f7e7e;
+			font-weight: 700;
+		}
+	}
+	&-right{
+		justify-content: flex-end;
+		.quote-image{
+			margin-top: -9px;
+		}
+		.quote-text{
+			padding-right: 6px;
+			cite{
+				margin: -4px 7px 10px 0;
+			}
+		}
+	}
+}
