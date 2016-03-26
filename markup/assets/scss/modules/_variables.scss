@@ -33,28 +33,31 @@ $font-size-h2:            floor(($font-size-base * 2.142857)); // ~30px
 $font-size-h3:            ceil(($font-size-base * 1.142857)); // ~16px
 
 //Buttons
-$btn-font-size:                  15px;
-$btn-sm-font-size:               14px;
-$btn-lg-font-size:               24px;
+$btn-font-size:                  1.3vw;
+$btn-sm-font-size:               1.2vw;
+$btn-lg-font-size:               2vw;
+$btn-dark-sm-font-size:          12px;
 $btn-color:						$text-color;
 $btn-font-weight:                700;
-$btn-padding-vertical:           17px;
-$btn-padding-horizontal:         47px;
-$btn-lg-padding-vertical:        14px;
-$btn-lg-padding-horizontal:      48px;
+$btn-padding-vertical:           12px;
+$btn-padding-horizontal:         13px;
+$btn-sm-padding:      		     14px 0px 11px 0px;
+$btn-lg-padding-vertical:        13px;
+$btn-lg-padding-horizontal:      31px;
+$btn-dark-sm-padding:     			 9px 15px 8px 22px;
 $btn-brand-bg:                   #f09d66;
 $btn-brand-bg-hover:             darken($btn-brand-bg, 10%);
 $btn-trapeze-bg:                 $text-inverse-color;
 $btn-trapeze-bg-hover:           #f0975c;
-$btn-dark-bg:                   #323030;
-$btn-dark-bg-hover:             darken($btn-brand-bg, 10%);
+$btn-dark-bg:                   #494747;
+$btn-dark-bg-hover:             darken($btn-dark-bg, 10%);
 
 
 //icons
 $icon-font-size-base:			15px;
-$icon-font-size-md:				20px;
+$icon-font-size-md:				24px;
 $icon-font-size-lg:				48px;
-$icon-font-size-mlg:			30px;
+
 
 // Forms
 $input-bg:                       transparent;
@@ -73,3 +76,7 @@ $footer-copywrite-color:        #363636;
 $footer-bg:						#141414;
 
 
+//thumbnail
+$thumb-border:            #fff;
+$thumb-bg:                 $btn-dark-bg;
+$lebels-bg:               #feab12;
