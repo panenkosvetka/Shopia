@@ -1,0 +1,36 @@
+.jq-selectbox{
+	background: $text-inverse-color;
+	color: $text-color;
+	padding: 9px 20px 5px 14px;
+	font-weight: 700;
+	font-size: 12px;
+	height: 35px;
+	width: 90px;
+	right: -8px;
+	top: 8px;
+	margin-left: 13px;
+	select{
+		height: auto !important;
+	}
+}
+.jq-selectbox__trigger{
+	&:before{
+		content: "\e905";
+		font-family: 'icomoon';
+		color: $text-color;
+		position: absolute;
+		top: 0;
+		right: -10px;
+	}
+}
+.jq-selectbox__dropdown{
+	right: -8px;
+}
+.jq-selectbox ul{
+	background: $text-inverse-color;
+	color: $text-color;
+	width: 90px;
+}
+.jq-selectbox li{
+	padding: 9px 20px 5px 14px;
+}
