@@ -64,11 +64,13 @@ $input-bg:                       transparent;
 $input-color:                    #6a6a6a;
 $input-border:                   #484848;
 $input-color-placeholder:        $input-color;
-$input-padding-horizontal:		 20px;
+$input-padding:		 1.1vw 11vw 1.1vw 1vw;
 $input-height-base:              42px ;
 $input-font-size:                12px;
 $input-border-width:             1px;
-
+$input-inverse-border:			 darken($btn-brand-bg, 10%);
+$input-inverse-color:			#f09d66;
+$input-fz:					1.1vw;
 
 //footer
 $footer-color:					#737373;
@@ -80,3 +82,13 @@ $footer-bg:						#141414;
 $thumb-border:            #fff;
 $thumb-bg:                 $btn-dark-bg;
 $lebels-bg:               #feab12;
+$thumb-bg-shadow:			rgba(50,48,48,.4);
+
+//scrolltop
+$scrolltop-bg :						#090909;
+$scrolltop-fz:						30px;
+$scrolltop-padding:					0px 12px;
+
+//slider
+$pager-color:             		#969390;
+$pager-hover-color:  			#000;
