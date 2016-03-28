@@ -1,0 +1,61 @@
+.container-slider{
+ position: relative;
+ max-width: 100%;	
+ margin: 0 auto;
+	.slider-sale{
+		&-main{
+			position: relative;
+				.slider-img{
+					img{
+						width: 100%;
+	 				}
+				}
+				.btn{
+			        position: absolute;
+			        left: 50%;
+			        transform: translateX(-50%);
+			        bottom: 11%;
+               @media screen and (max-width: 786px){
+                  transform: translateX(-65%);
+                }
+				}
+			}
+		}
+.slider-arrows{
+	display: flex;
+	justify-content: center ;
+	position: absolute;
+	left: 52%;
+	transform: translateX(-52%);
+	bottom: 5%;
+   .pager{
+    .bx-pager-item {
+     display: inline-block; 
+     
+     a{
+      position: relative;
+      display: block;
+      height: 20px;
+      width: 20px;
+	  color: transparent;
+      &:hover{
+       &:before{
+        color: $pager-hover-color;
+       }
+      }
+      &:before{
+       content: "\e906";
+       font-family: 'icomoon';
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       font-size: 20px;
+        color: $pager-color;
+       z-index: 20;
+      }
+     }
+    }
+  }
+ }
+}

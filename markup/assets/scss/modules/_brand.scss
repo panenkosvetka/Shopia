@@ -1,0 +1,21 @@
+.container-brand{
+  display: flex;
+ 	 justify-content: space-between;
+ 	 flex-wrap: wrap;
+ 	  @media screen and (max-width: 786px){
+ 	  justify-content: space-around;
+     }
+ 	 &-img{
+    width: 100%;
+ 	 margin: 2.1%;
+ 	 @media screen and (min-width: 787px){
+     width: 12%;
+     }
+     @media screen and (max-width: 786px){
+      width: 31%;
+     }
+      @media screen and (max-width: 480px){
+      width: 45%;
+     }
+   }
+}

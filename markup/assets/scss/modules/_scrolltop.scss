@@ -1,0 +1,11 @@
+#toTop {
+background:$scrolltop-bg;
+text-align:center;
+padding: $scrolltop-padding;
+position:fixed;
+bottom:10px; 
+right:10px;
+font-size: $scrolltop-fz;
+cursor:pointer;
+display:none;
+}
