@@ -59,14 +59,19 @@
 			&-main{
 				&-caption{
 					.jumbotron{
-						margin-bottom: 51px;
+						margin-bottom: 15px;
+						@media screen and (min-width: 1026px){
+							margin-bottom: 51px;
+						}
 						@media screen and (min-width: 1420px){
 							margin-bottom: 56px;
 						}
 					}
 					.btn{
 						align-self: center;
-						margin-left: -19px;
+						@media screen and (min-width: 1026px){
+							margin-left: -19px;
+						}	
 					}
 				}
 			}
@@ -169,7 +174,10 @@
 			padding: 76px 0 49px 0;
 		}
 		.page-header{
-			margin-bottom: 110px;
+			margin-bottom: 60px;
+			@media screen and (min-width: 960px){
+				margin-bottom: 110px;
+			}
 			@media screen and (min-width: 1420px){
 				margin-bottom: 122px;
 			}
@@ -227,10 +235,8 @@
 		}
 		&-img{
 			display: flex;
-			justify-content: space-around;
-			width: 15%;
 			.form-img{
-			   width: 23%;
+			   margin-right: 10px;
 			}
 		}
 	}

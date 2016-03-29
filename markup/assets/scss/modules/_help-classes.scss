@@ -3,16 +3,20 @@
 	&:after{
 		content: "";
 		position: absolute;
-		top: 100%;
+		top: 99%;
 		left: 50%;
 		z-index: 1000;
 		transform: translateX(-50%);
 		width: 0;
 		height: 0;
 		border-style: solid;
-		border-width: 50px 150px 0 150px;
+		border-width: 20px 90px 0 90px;
 		border-color: #ffffff transparent transparent transparent;
 		@media screen and (min-width: 768px){
+			border-width: 40px 150px 0 150px;
+			transform: translateX(-46%);
+			}
+		@media screen and (min-width: 960px){
 			border-width: 60px 199px 0 199px;
 			transform: translateX(-46%);
 			}

@@ -75,8 +75,12 @@
 				}
 	}
 	&-lg{
-		padding: 12px 26px 7px 20px;
-		font-size: $btn-lg-font-size;
+		padding: $btn-sm-padding;
+		font-size: $btn-sm-font-size;
+		@media screen and (min-width: 960px){
+			padding: 12px 26px 7px 20px;
+			font-size: $btn-lg-font-size;
+		}
 		@media screen and (min-width: 1420px){
 			padding: 13px 32px 11px 27px;
 		}

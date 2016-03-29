@@ -6,11 +6,15 @@
 		text-align:center;
 		padding: $scrolltop-padding;
 		position:fixed;
-		bottom:153px; 
-		right:70px;
+		bottom:20px; 
+		right:20px;
 		font-size: $scrolltop-fz;
 		cursor:pointer;
 		border-radius: 2px;
+		@media screen and (min-width: 960px){
+			bottom:153px; 
+			right:70px;
+		}
 		&:hover,
 		&.active{
 			text-decoration: none;

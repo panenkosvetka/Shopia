@@ -1,8 +1,15 @@
 .jumbotron{
+	@media screen and (max-width: 550px){
+		display: none;
+	}
+	display: block;
 	border: 2px solid #fff;
 	font-weight: 700;
 	position: relative;
-	padding: 30px 25px 30px 24px;
+	padding: 10px 15px;
+	@media screen and (min-width: 960px){
+		padding: 30px 25px 30px 24px;
+	}
 	@media screen and (min-width: 1420px){
 		padding: 31px 34px 31px 31px;
 	}
@@ -15,6 +22,12 @@
 		right: 6px;
 		border: 1px solid #fff;
 	}
+	.h1{
+		font-size: $font-size-h3;
+		@media screen and (min-width: 960px){
+			font-size: $font-size-h1;
+		}
+	}
 	.h1, .h2{
 		color: $text-inverse-color;
 		margin-bottom: 13px;
@@ -24,6 +37,10 @@
 	}
 	.h2{
 		margin-bottom: 2px;
+		font-size: $font-size-h4;
+		@media screen and (min-width: 960px){
+			font-size: $font-size-h2;
+		}
 	}
 	.h3{
 		color: $text-color;
