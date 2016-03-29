@@ -8,15 +8,19 @@
 	border: none;
 	display: inline-block;
 	font-family: inherit;
-	margin: 20px;
 	text-align: center;
-		&:hover,
-		&:focus{
-			text-decoration: none;
-		}
+	&:hover,
+	&:focus{
+		text-decoration: none;
+	}
 	&-trapeze{
 		background: $btn-trapeze-bg;
 		color:$btn-color;
+		font-size: $btn-md-font-size;
+		padding: 13px 0 11px 0;
+		@media screen and (min-width: 1420px){
+			padding: 16px 2px 12px 2px;
+		}
 			&:hover,
 			&:focus{
 				background: $btn-trapeze-bg-hover;
@@ -36,20 +40,20 @@
 			&:before{
 				bottom: 0;
 				top: 0;
-				left: -15px;
+				left: -25px;
 				right: 0px;
-				webkit-transform: skew(-35deg);
-   				 -ms-transform: skew(-35deg);
-   				 transform: skew(-35deg);
+				webkit-transform: skew(-44deg);
+   				 -ms-transform: skew(-44deg);
+   				 transform: skew(-44deg);
 			}
 			&:after{
 				bottom: 0;
 				top: 0;
-				left: 15px;
+				left: 25px;
 				right: 0;
-				webkit-transform: skew(35deg);
-    			-ms-transform: skew(35deg);
-   				 transform: skew(35deg);
+				webkit-transform: skew(44deg);
+    			-ms-transform: skew(44deg);
+   				 transform: skew(44deg);
 			}
 	}
 	&-brand{
@@ -71,16 +75,22 @@
 				}
 	}
 	&-lg{
-		padding: $btn-lg-padding-vertical $btn-lg-padding-horizontal;
+		padding: 12px 26px 7px 20px;
 		font-size: $btn-lg-font-size;
+		@media screen and (min-width: 1420px){
+			padding: 13px 32px 11px 27px;
+		}
 	}
 	&-sm{
 		font-size: $btn-sm-font-size;
 	   	 padding: $btn-sm-padding;
 	}
-	&-dark-sm{
-		font-size: $btn-dark-sm-font-size;
-	    padding: $btn-dark-sm-padding;
+	&-md{
+		font-size: $btn-md-font-size;
+	    padding: 12px 15px 12px 11px;
+	    @media screen and (min-width: 1420px){
+			padding: $btn-md-padding;
+		}
 	}
 	
 }

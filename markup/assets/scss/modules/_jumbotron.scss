@@ -1,0 +1,77 @@
+.jumbotron{
+	border: 2px solid #fff;
+	font-weight: 700;
+	position: relative;
+	padding: 30px 25px 30px 24px;
+	@media screen and (min-width: 1420px){
+		padding: 31px 34px 31px 31px;
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		top: 6px;
+		bottom: 6px;
+		left: 6px;
+		right: 6px;
+		border: 1px solid #fff;
+	}
+	.h1, .h2{
+		color: $text-inverse-color;
+		margin-bottom: 13px;
+		@media screen and (min-width: 1420px){
+			margin-bottom: 15px;
+		}
+	}
+	.h2{
+		margin-bottom: 2px;
+	}
+	.h3{
+		color: $text-color;
+		margin-bottom: 10px;
+		@media screen and (min-width: 1420px){
+			margin-bottom: 16px;
+		}
+	}
+	.border-block{
+		text-align: center;
+		padding: 0 60px;
+		overflow: hidden;
+		&-inner{
+			position: relative;
+			&:before,
+			&:after{
+				content: "";
+				position: absolute;
+				top: 12px;
+				border-bottom: 1px solid $text-color;
+			}
+			&:before{
+				right: 100%;
+				left: -32px;
+			}
+			&:after{
+				right: -32px;
+				left: 100%;
+			}
+			.h3{
+				padding: 0 14px;
+				position: relative;
+				&:before,
+				&:after{
+					content: "";
+					position: absolute;
+					bottom: 4px;
+					border-bottom: 1px solid $text-color;
+				}
+				&:before{
+					right: 100%;
+					left: -999px;
+				}
+				&:after{
+					right: -999px;
+					left: 100%;
+				}
+			}
+		}
+	}
+}

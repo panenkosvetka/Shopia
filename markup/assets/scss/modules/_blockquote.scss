@@ -4,14 +4,24 @@
 	padding-top: 60px;
 	margin-bottom: 20px;
 	@media screen and (min-width: 768px){
-		padding: 36px 0 29px 0;
+		padding: 36px 0 27px 0;
 		align-items: stretch;
+	}
+	@media screen and (min-width: 1420px){
+		padding: 36px 0 29px 0;
+	}
+	&-image{
+		max-width: 40%;
 	}
 	&-text{
 		padding: 0 0 0 15px;
+		align-self: center;
 		line-height: $line-height-quote;
 		@media screen and (min-width: 768px){
-			padding: 94px 0 0 15px;
+			padding-top: 80px;
+		}
+		@media screen and (min-width: 1420px){
+			padding-top: 86px;
 		}
 		blockquote{
 			font-family: $second-font-family;
@@ -19,6 +29,9 @@
 			font-style: italic;
 			margin-bottom: 20px;
 			@media screen and (min-width: 768px){
+				margin-bottom: 37px;
+			}
+			@media screen and (min-width: 1420px){
 				margin-bottom: 48px;
 			}
 		}

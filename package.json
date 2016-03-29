@@ -1,21 +1,28 @@
 {
-  "name": "project",
+  "name": "shopia",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panenkosvetka/Shopia.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panenkosvetka/Shopia/issues"
+  },
+  "homepage": "https://github.com/panenkosvetka/Shopia#readme",
   "devDependencies": {
-    "browser-sync": "^2.11.1",
+    "browser-sync": "^2.11.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
-    "gulp-imagemin": "^2.4.0",
     "gulp-sass": "^2.2.0",
-    "gulp-uglify": "^1.5.3",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-watch": "^4.3.5"
   }
 }

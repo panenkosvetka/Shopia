@@ -1,11 +1,21 @@
 #toTop {
-background:$scrolltop-bg;
-text-align:center;
-padding: $scrolltop-padding;
-position:fixed;
-bottom:10px; 
-right:10px;
-font-size: $scrolltop-fz;
-cursor:pointer;
-display:none;
+	display: none;
+	&.open{
+		display: block;
+		background:$scrolltop-bg;
+		text-align:center;
+		padding: $scrolltop-padding;
+		position:fixed;
+		bottom:153px; 
+		right:70px;
+		font-size: $scrolltop-fz;
+		cursor:pointer;
+		border-radius: 2px;
+		&:hover,
+		&.active{
+			text-decoration: none;
+			background: lighten($scrolltop-bg, 10%);
+		}
+	}
+
 }

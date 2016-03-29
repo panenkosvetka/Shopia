@@ -50,12 +50,21 @@
 					color: $text-inverse-color;
 					font-size: $font-size-lg;
 					text-decoration: none;
-					padding: 7px 12px;
+					padding: 7px 9px;
 					display: inline-block;
 					font-family: $second-font-family;
 					&:hover{
 						color: $brand-color;
 					}
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 1420px){
+		.nav{
+			li{
+				a{
+					padding: 7px 12px;
 				}
 			}
 		}

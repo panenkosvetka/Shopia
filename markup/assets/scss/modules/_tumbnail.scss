@@ -1,10 +1,6 @@
 
 .tumbnail{
   position:relative;
-  margin: 2% 2%;
-    @media screen and (max-width: 768px){
-      margin: 10px 10px;
-    }
     img{
      width: 100%;
     }
@@ -31,13 +27,13 @@
       .btn{
         display: inline-block;
         position: absolute;
-        left: 43%;
+        left: 50%;
         transform: translateX(-50%);
-        bottom: 11%;
+        bottom: 16%;
         z-index: 2;
-         @media screen and (max-width: 768px){
-        font-size:4vw; 
-       }
+        @media screen and (min-width: 768px){
+          transform: translateX(-58%);
+        }
       }
       .thumb-image{
         position: relative;
@@ -62,50 +58,33 @@
       }
     }
   }
-  &-border-centr{
-  position: relative;
-    &:before{
-      content: '';
-      margin: 18px 14px;
-      position: absolute;
-      border:2px solid $thumb-border;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      top: 0;
-      cursor: pointer;
-    }
-  }
   &-shadow{
      position: relative;
-    &:before{
-      content: '';
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
-      left: 0px;
-      top: 0px;
-      cursor: pointer;
-    }
     .btn{
      display: inline-block;
       position: absolute;
-      left: 16%;
-      right: 16%;
-      bottom: -20px;
+      left: 50%;
+      transform: translateX(-57%);
+      bottom: 0px;
       z-index: 2;
-        @media screen and (max-width: 786px){
-        font-size:1.5vw; 
-       }
-       @media screen and (max-width: 480px){
-        font-size:4vw; 
-        padding: 2vw;
-     }
     }
      &:hover{
-   &:before {
-      background: $thumb-bg-shadow;
-      z-index: 1;
+       &:before {
+          content: '';
+          background: $thumb-bg-shadow;
+          z-index: 1;
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          left: 0px;
+          top: 0px;
+          cursor: pointer;
+        }
+        .btn{
+          &:before,
+          &:after{
+            background: $btn-trapeze-bg-hover;
+          }
         }
       }
   }

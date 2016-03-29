@@ -4,8 +4,9 @@
 @import 'modules/reset';
 @import 'modules/type';
 
-@import 'modules/icons/style';
 @import 'modules/icons/variables';
+@import 'modules/icons/style';
+
 
 @import 'modules/blocks';
 @import 'modules/lists';
@@ -20,9 +21,10 @@
 @import 'modules/scrolltop';
 @import 'modules/slider';
 @import 'modules/tumbnail';
+@import 'modules/jumbotron';
 .pp{
 	position: absolute;
-	top: -697px;
+	top: 0;
 	opacity: 0.5;
 	left: 50%;
 	-webkit-transform: translateX(-50%);

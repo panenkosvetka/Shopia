@@ -1,32 +1,25 @@
 .labels {
-	padding: 4% 3% 4% 3%;
+	width: 56px;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	border-radius: 50%;
-	top:2%;
-    left: 2%;
-    	span{
-     		display: inline-block;
-     			em{
-     			 	display: inline-block;
-      			  	vertical-align: top;
-     				font-size: 22px;
-     			}
-				sup{
-					display: inline-block;
-					font-size: 11px;
-				}
-		}
-	@media screen and (max-width: 768px){
-     	span{
-     		em{
-     			font-size: 4vw;
-     		}
-			sup{
-				font-size: 2vw;
-			}
- 		 }
+	top:5%;
+    left: 5%;
+    z-index: 5;
+    @media screen and (min-width: 1420px){
+    	width: 60px;
+		height: 60px;
+    }
+	em{
+		font-size: 22px;
 	}
-	&-brend{
+	sup{
+		font-size: 11px;
+	}
+	&-brand{
 		background: $lebels-bg;
 	}
 }

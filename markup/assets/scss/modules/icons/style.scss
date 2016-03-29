@@ -87,7 +87,10 @@
     }
 }
 .md-icons{
-    font-size: $icon-font-size-md;
+    font-size: $icon-font-size-smd;
+    @media screen and (min-width: 1420px){
+        font-size: $icon-font-size-md;
+     }
 }
 .lg-icons{
     font-size: $icon-font-size-mlg;

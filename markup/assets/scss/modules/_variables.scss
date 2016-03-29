@@ -30,21 +30,25 @@ $preheader-color:         #393939;
 
 $font-size-h1:            floor(($font-size-base * 4.21428)); // ~59px
 $font-size-h2:            floor(($font-size-base * 2.142857)); // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.142857)); // ~16px
+$font-size-h3:            ceil(($font-size-base * 1.42857)); // ~20px
+$font-size-h4:            ceil(($font-size-base * 1.142857)); // ~16px
+//slider
+$pager-color:             		#969390;
+$pager-hover-color:  			#000;
 
 //Buttons
-$btn-font-size:                  1.3vw;
-$btn-sm-font-size:               1.2vw;
-$btn-lg-font-size:               2vw;
-$btn-dark-sm-font-size:          12px;
+$btn-font-size:                  15px;
+$btn-md-font-size:               14px;
+$btn-lg-font-size:               24px;
+$btn-sm-font-size:          	12px;
 $btn-color:						$text-color;
 $btn-font-weight:                700;
 $btn-padding-vertical:           12px;
 $btn-padding-horizontal:         13px;
-$btn-sm-padding:      		     14px 0px 11px 0px;
+$btn-md-padding:      		     14px 17px 12px 13px;
 $btn-lg-padding-vertical:        13px;
 $btn-lg-padding-horizontal:      31px;
-$btn-dark-sm-padding:     			 9px 15px 8px 22px;
+$btn-sm-padding:     			 9px 15px 8px 22px;
 $btn-brand-bg:                   #f09d66;
 $btn-brand-bg-hover:             darken($btn-brand-bg, 10%);
 $btn-trapeze-bg:                 $text-inverse-color;
@@ -52,31 +56,19 @@ $btn-trapeze-bg-hover:           #f0975c;
 $btn-dark-bg:                   #494747;
 $btn-dark-bg-hover:             darken($btn-dark-bg, 10%);
 
-
+//jumbotron
+$jumbotron-border-width:		2px;
+$jumbotron-border-width-min:	1px;
+$jumbotron-border-color:        #fff;
+$jumbotron-fz-p:				2vw;
+$jumbotron-fz-h1:				3vw;
+$jumbotron-fz-span:				3vw;
 //icons
 $icon-font-size-base:			15px;
+$icon-font-size-smd:			20px;
 $icon-font-size-md:				24px;
 $icon-font-size-lg:				48px;
 $icon-font-size-mlg:			30px;
-
-// Forms
-$input-bg:                       transparent;
-$input-color:                    #6a6a6a;
-$input-border:                   #484848;
-$input-color-placeholder:        $input-color;
-$input-padding:		 1.1vw 11vw 1.1vw 1vw;
-$input-height-base:              42px ;
-$input-font-size:                12px;
-$input-border-width:             1px;
-$input-inverse-border:			 darken($btn-brand-bg, 10%);
-$input-inverse-color:			#f09d66;
-$input-fz:					1.1vw;
-
-//footer
-$footer-color:					#737373;
-$footer-copywrite-color:        #363636;
-$footer-bg:						#141414;
-
 
 //thumbnail
 $thumb-border:            #fff;
@@ -84,11 +76,30 @@ $thumb-bg:                 $btn-dark-bg;
 $lebels-bg:               #feab12;
 $thumb-bg-shadow:			rgba(50,48,48,.4);
 
+// Forms
+$input-bg:                       transparent;
+$input-color:                    #6a6a6a;
+$input-border:                   #484848;
+$input-color-placeholder:        $input-color;
+$input-padding:		 10px 100px 12px 20px;
+$input-height-base:              42px ;
+$input-font-size:                12px;
+$input-border-width:             1px;
+$input-inverse-border:			 darken($btn-brand-bg, 10%);
+$input-inverse-color:			#f09d66;
+$input-fz:					12px;
+
+//footer
+$footer-color:					#737373;
+$footer-copywrite-color:        #363636;
+$footer-bg:						#141414;
+$form-bottom-text-color:         #323232;
+$form-bottom-text-fz:           1vw;
+
+
+
 //scrolltop
 $scrolltop-bg :						#090909;
 $scrolltop-fz:						30px;
-$scrolltop-padding:					0px 12px;
+$scrolltop-padding:					1px 11px 0 11px;
 
-//slider
-$pager-color:             		#969390;
-$pager-hover-color:  			#000;

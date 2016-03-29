@@ -18,9 +18,13 @@
 				}
 			}
 			a{
-				padding-left: 35px;
-				padding-right: 35px;
+				padding-left: 33px;
+				padding-right: 27px;
 				position: relative;
+				@media screen and (min-width: 1420px){
+					padding-left: 35px;
+					padding-right: 35px;
+				}
 				&:hover{
 					color: darken($preheader-color, 10%);
 					text-decoration: none;
@@ -77,8 +81,8 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				width: 35px;
-				height: 35px;
+				width: 32px;
+				height: 32px;
 				border-radius: 50%;
 				border: 2px solid $brand-color;
 				margin-right: 12px;
@@ -91,6 +95,10 @@
 					[class*="icon-"]{
 						color: $text-color;
 					}
+				}
+				@media screen and (min-width: 1420px){
+					width: 35px;
+					height: 35px;
 				}
 			}
 		}
@@ -105,6 +113,9 @@
 					background: $text-color;
 					margin-right: 10px;
 					@media screen and (min-width: 768px){
+						margin-right: 18px;
+					}
+					@media screen and (min-width: 1420px){
 						margin-right: 15px;
 					}
 					[class*="icon-"]{
@@ -122,18 +133,25 @@
 		&-lg{
 			li{
 				a{
-					width: 51px;
-					height: 51px;
+					width: 46px;
+					height: 46px;
+					@media screen and (min-width: 1420px){
+						width: 51px;
+						height: 51px;
+					}
 				}
 			}
 		}
 	}
 	&-arrow{
 		width: 100%;
-		padding: 20px 0;
+		padding: 17px 0;
 		justify-content: flex-start;
 		position: relative;
 		z-index: 1;
+		@media screen and (min-width: 1420px){
+			padding: 20px 0;
+		}
 		.list-caption{
 			h2{
 				color: $text-color;
@@ -149,6 +167,13 @@
 		&-center{
 			.list-image{
 				margin: 0 20px 0 40px;
+				@media screen and (min-width: 768px){
+					margin-left: 10px;
+					margin-top: 5px;
+				}
+				@media screen and (min-width: 1420px){
+					margin-left: -7px;
+				}
 			}
 		}
 		&-right,
@@ -184,9 +209,6 @@
 			&-center{
 				width: 28.5%;
 				background: transparent;
-				.list-image{
-					margin: 5px 20px 0 -7px;
-				}
 				.list-caption{
 					margin-top: -3px;
 				}
@@ -238,33 +260,23 @@
 					transform: skew(41deg);
 				}
 			}
-		}
-		// @media screen and (min-width: 960px){
-		// 	&-right{
-		// 		&:before,
-		// 		&:after{
-		// 			right: 5%;
-		// 		}
-		// 	}
-		// 	&-left{
-		// 		&:before,
-		// 		&:after{
-		// 			left: 5%;
-		// 		}
-		// 	}
-		// }	
+		}	
 	}
 	&-footer{
 		flex-direction: column;
 		margin-bottom: 20px;
-		padding-left: 40px;
+		display: inline-block;
+		text-align: left;
 		@media screen and (min-width: 960px){
 			margin-bottom: 0;
 			padding-left: 0;
 		}
 		li{
 			color: $footer-color;
-			margin-bottom: 13px;
+			margin-bottom: 11px;
+			@media screen and (min-width: 1420px){
+				margin-bottom: 13px;
+			}
 		}
 	}
 }

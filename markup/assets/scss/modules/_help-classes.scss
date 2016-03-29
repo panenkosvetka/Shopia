@@ -34,6 +34,9 @@
 		padding: 0 20px;
 		position: relative;
 		@media screen and (min-width: 768px){
+			padding: 0 80px;
+		}
+		@media screen and (min-width: 1420px){
 			padding: 0 90px;
 		}
 		[class*='icon-']{

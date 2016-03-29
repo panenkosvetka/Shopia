@@ -35,7 +35,8 @@ $grid-breakpoints: (
   sm: 480px,
   md: 768px,
   lg: 960px,
-  xl: 1320px
+  xl: 1240px,
+  xlg: 1420px
 ) !default;
 
 // Number of columns in the grid.
@@ -53,7 +54,8 @@ $container-max-widths: (
   sm: 768px,
   md: 960px,
   lg: 1240px,
-  xl: 1320px
+  xl: 1240px,
+  xlg: 1320px
 ) !default;
 
 

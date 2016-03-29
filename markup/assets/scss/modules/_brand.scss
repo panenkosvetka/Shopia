@@ -1,21 +1,16 @@
-.container-brand{
+.block-brands-inner{
   display: flex;
- 	 justify-content: space-between;
- 	 flex-wrap: wrap;
- 	  @media screen and (max-width: 786px){
- 	  justify-content: space-around;
-     }
- 	 &-img{
-    width: 100%;
- 	 margin: 2.1%;
- 	 @media screen and (min-width: 787px){
-     width: 12%;
-     }
-     @media screen and (max-width: 786px){
-      width: 31%;
-     }
-      @media screen and (max-width: 480px){
-      width: 45%;
+ 	justify-content: space-around;
+  align-items: center;
+ 	flex-wrap: wrap;
+ 	.container-brand-img{
+    width: 49%;
+    margin-bottom: 25px;
+ 	  @media screen and (min-width: 768px){
+      width: 33%;
+    }
+    @media screen and (min-width: 960px){
+      width: 16%;
      }
    }
 }
