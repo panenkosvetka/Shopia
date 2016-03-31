@@ -143,8 +143,10 @@
 				pmargin-bottom: 57px;
 			}
 			h2{
-				margin-right: -85px;
 				padding: 0 42px;
+				@media screen and (min-width: 960px){
+					margin-right: -85px;
+				}
 				@media screen and (min-width: 1420px){
 					padding: 0 46px;
 					margin-right: -76px;
@@ -220,6 +222,8 @@
 			font-family: $second-font-family;
 			text-transform: none;
 			font-style: italic;
+			display: inline-block;
+			margin: 0 5px;
 		}
 
 	}
