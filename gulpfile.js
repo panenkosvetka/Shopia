@@ -22,6 +22,7 @@ var markupPaths = {
     image:[markup + '/assets/images/**/*.+(png|jpg|svg)']
 }
 
+'use strict';
 gulp.task('html', function() {
     return gulp.src(markupPaths.html)
         .pipe(gulp.dest('./dist'))
